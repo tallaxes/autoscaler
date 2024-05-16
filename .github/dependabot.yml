@@ -34,3 +34,19 @@ updates:
     interval: daily
   target-branch: "addon-resizer-release-1.8"
   open-pull-requests-limit: 3
+  
+# cluster-autoscaler
+- package-ecosystem: gomod
+  directory: "/cluster-autoscaler"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 3
+  labels:
+    - "area/cluster-autoscaler"
+- package-ecosystem: gomod
+  directory: "/cluster-autoscaler/apis"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 3
+  labels:
+    - "area/cluster-autoscaler"
